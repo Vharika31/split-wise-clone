@@ -7,6 +7,7 @@ import GroupsList from "@/components/GroupsList";
 import CreateGroupModal from "@/components/CreateGroupModal";
 import RecentExpenses from "@/components/RecentExpenses";
 import BalanceSummary from "@/components/BalanceSummary";
+import ChatBot from "@/components/ChatBot";
 
 const Index = () => {
   const [showCreateGroup, setShowCreateGroup] = useState(false);
@@ -89,6 +90,9 @@ const Index = () => {
         open={showCreateGroup} 
         onOpenChange={setShowCreateGroup} 
       />
+
+      {/* AI Chatbot */}
+      <ChatBot />
     </div>
   );
 };
